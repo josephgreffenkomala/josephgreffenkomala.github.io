@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
+@plugin "tailwindcss-motion";
+@import "tailwindcss";
+
+@theme{
+    --color-base: #FFF5E1;
+    --color-first: #5189D3;
+    --color-second: #FED363;
+    --color-third: #83D6E8;
+    --color-third-light: #BAE8F2;
+    --color-third-dark: #74BECE;
+    --color-fourth: #FF984D;
+    --color-fourth-light: #FEE7A8;
+    --color-fourth-mid: #FFBA88 ;
+    --color-fifth: #01BBB6;
+    --color-sixth: #FE6B75;
+    --font-itim: 'Itim', cursive;
+    --font-lusitana: 'Lusitana', serif;
+
+    --animate-zoom: zoom 1s ease-in-out ;
+    @keyframes zoom {
+        0% {
+            filter: blur(8px);
+            /* opacity: 0; */
+        }
+        100% {
+            transform: scale(1.33) translateX(-9em);
+            filter: blur(0px);
+            /* opacity: 1; */
+        }
+    }
+
+    --animate-rotate-mid: rotate-mid 1s ease-in-out ;
+    @keyframes rotate-mid {
+        100% {
+            transform: translateX(-250px) scale(0.5);
+            filter: blur(8px);
+            opacity: 0;
+        }
+    }
+
+    --animate-rotate-right: rotate-right 1s ease-in-out ;
+    @keyframes rotate-right {
+        0% {
+            transform: translateX(0px) scale(1);
+            filter: blur(8px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(-250px) scale(1.2);
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+
+}
