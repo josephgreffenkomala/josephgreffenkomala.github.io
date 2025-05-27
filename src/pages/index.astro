@@ -7,6 +7,9 @@ import "../styles/global.css";
 import Hero from '../components/Hero.astro';
 import Joseph from '../components/Joseph.astro';
 import Wrap_like from '../components/Wrap_like.jsx';
+import Card_other from '../components/Card_other.jsx';
+import Card from '../components/Card.astro';
+import Wrap_other from '../components/Wrap_other.jsx';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -19,6 +22,7 @@ import Wrap_like from '../components/Wrap_like.jsx';
     <Wrap client:only="react"/>
 	<Wrap_think client:only="react"/>
 	<Wrap_like client:only="react" />
+	<Wrap_other client:only="react" />
 
 	
 </Layout>

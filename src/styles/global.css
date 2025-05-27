@@ -10,13 +10,21 @@
     --color-third: #83D6E8;
     --color-third-light: #BAE8F2;
     --color-third-dark: #74BECE;
+    --color-fourth-dark: #8E542B;
     --color-fourth: #FF984D;
     --color-fourth-light: #FEE7A8;
     --color-fourth-mid: #FFBA88 ;
     --color-fifth: #01BBB6;
+    --color-fifth-light: #C7F0EF;
     --color-sixth: #FE6B75;
     --font-itim: 'Itim', cursive;
     --font-lusitana: 'Lusitana', serif;
+
+    --shadow-sm:6px 6px 4px 0px rgba(0, 0, 0, 0.7);
+    --shadow-md:6px 6px 4px 6px rgba(0, 0, 0, 0.7);
+    --shadow-lg:6px 6px 4px 6px rgba(0, 0, 0, 0.7);
+    --shadow-sm-left: -6px 6px 4px 6px rgba(0, 0, 0, 0.7);
+
 
     --animate-zoom: zoom 1s ease-in-out ;
     @keyframes zoom {
@@ -30,6 +38,35 @@
             /* opacity: 1; */
         }
     }
+    --animate-zoom-lg: zoom-lg 1s ease-in-out ;
+    @keyframes zoom-lg {
+        0% {
+            filter: blur(8px);
+            /* opacity: 0; */
+        }
+        100% {
+            transform: scale(1.33) translateX(-10em);
+            width:40rem;
+            filter: blur(0px);
+            /* opacity: 1; */
+        }
+    }
+    --animate-left-lg: left-lg 1s ease-in-out ;
+    @keyframes left-lg {
+        0% {
+
+            /* opacity: 0; */
+        }
+        100% {
+            transform: scale(0.75) translateX(-13em);
+            width:20rem;
+            filter: blur(8px);
+
+            /* opacity: 1; */
+        }
+    }
+
+
 
     --animate-rotate-mid: rotate-mid 1s ease-in-out ;
     @keyframes rotate-mid {
@@ -53,5 +90,6 @@
             opacity: 1;
         }
     }
+
 
 }

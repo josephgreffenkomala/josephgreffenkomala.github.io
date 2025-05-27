@@ -6,9 +6,9 @@ const graph = {
     { id: 1, label: "Joseph's\nCore", color: "#F9ECDB", font: { size: 18, bold: true, color: '#000000', face: 'itim' }, shape: "box", borderWidth: 1, shadow: true },
     { id: 2, label: "Joyfull", color: "#FED363", font: { color: '#000000', bold: true,face: 'itim'  }, shadow: true },
     { id: 3, label: "Intimate", color: "#5189D3", font: { color: '#000000', bold: true,face: 'itim' }, shadow: true },
-    { id: 4, label: "Analysis", color: "#FE6B75", font: { color: '#000000', bold: true, face: 'itim' }, shadow: true },
+    { id: 4, label: "Analytical", color: "#FE6B75", font: { color: '#000000', bold: true, face: 'itim' }, shadow: true },
     { id: 5, label: "Growth-\nOriented", color: "#FF984D", font: { color: '#000000', bold: true,face: 'itim' }, shadow: true },
-    { id: 6, label: "Think\nBefore Act", color: "#01BBB6", font: { color: '#000000', bold: true,face: 'itim' }, shadow: true },
+    { id: 6, label: "Thoughfull", color: "#01BBB6", font: { color: '#000000', bold: true,face: 'itim' }, shadow: true },
 
   ],
   edges: [

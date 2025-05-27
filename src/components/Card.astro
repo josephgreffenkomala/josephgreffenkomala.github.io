@@ -1,0 +1,13 @@
+---
+import astroLogo from '../assets/astro.svg';
+import background from '../assets/background.svg';
+import "../styles/global.css";
+const {w,h,color }= Astro.props;
+---
+<div class={`w-${w} rounded-4xl h-${h} p-5 border-2 bg-${color}  shadow-sm`} >
+    
+
+    <slot />
+
+    
+</div>

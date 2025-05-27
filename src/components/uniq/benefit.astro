@@ -1,0 +1,29 @@
+---
+import astroLogo from '../assets/astro.svg';
+import background from '../assets/background.svg';
+import Card from '../Card.astro';
+import "../../styles/global.css";
+
+const content={
+    first:"My cross-disciplinary experience allows me to apply concepts from one field to another. For example, I use data processing principles in software engineering to build more efficient and adaptive systems. This also enables <i>innovative combinations</i> —blending ideas from different domains to create unique and effective solutions.",
+    second:"Constant exposure to new fields has strengthened my ability to quickly adapt to emerging technologies and challenges.",
+    third:"Exploring many fields means I sometimes lack deep expertise in one specific area. To address this, I’m now focusing on sharpening my skills in selected domains that align with my long-term goals, aiming for a balance between breadth and depth"
+};
+
+---
+<div class="flex gap-5 p-10">
+    <Card w="1/2" color="third">
+        <h1 class="font-itim text-3xl">Benefit</h1>
+        <h2 class="font-bold font-itim mt-3">Flexible Thinking:</h2>
+        <p class="font-lusituna" set:html={content.first}></p>
+        <h2 class="font-bold font-itim mt-3">Fast Adaptability:</h2>
+        <p class="font-lusituna" set:html={content.second}></p>
+    </Card>
+    <Card w="1/2" color="second">
+        <h1 class="font-itim text-3xl">Challange</h1>
+        <h2 class="font-itim text-bold mt-3" >Lack of Deep Specialization:</h2>
+        <p class="font-lusituna" set:html={content.third}></p>
+    </Card>
+    
+    
+</div>

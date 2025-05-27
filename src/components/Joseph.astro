@@ -1,24 +1,28 @@
 ---
-
+const content={
+    first:`Joy is something I bring with me wherever I go. <br> So when I'm around others, that cheerfulness naturally shows up too. I love cracking jokes (even sometimes its just a dad jokes), i laughing, and teasing my friend.    `,
+    second:`I also really enjoy hearing other people’s perspectives. For me, it feels like catching a glimpse into another world — one shaped by different stories, values, and experiences.
+It reminds me how diverse we are. I've always been fascinated by that diversity and drives me to curiosity about other perspective. Sometimes I even catch myself wondering: <i>What would it feel like to be someone else? What are they thinking? How would they respond in a particular moment?</i>`,
+    third:  `Even as someone who enjoys social interaction, I’m an <b>introvert</b>.  
+I feel most at home in small, close-knit groups, where conversations go beyond the surface. Inside jokes, thoughtful talks, shared silences? Count me in!`,
+    fourth:`I also find a sense of calm in planning. Before jumping into something, I like to take a step back and figure things out first. It helps me feel grounded and clear-headed, so when it's time to act, I’m not lost.`
+}
 ---
-<div class="flex bg-fifth m-10 rounded-4xl p-10">
-    <div class="mr-10">
-        <img src="/joseph.jpg" alt="Joseph" class=" w-sm rounded-lg shadow-lg" />
+<div class="flex bg-fifth m-10 rounded-4xl p-10 border-2 shadow-sm">
+    <div class="mr-10 w-1/5">
+        <img src="/joseph.jpg" alt="Joseph" class=" rounded-full shadow-sm-left" />
     </div>
     
-    <div class="w-1/2">
+    <div class="w-4/5">
         <h2 class="text-4xl font-bold mb-2 font-itim">Joseph Greffen Komala</h2>
-        <p class="font-lusitana text-justify">I'm Joseph Greffen Komala, a Computer Science student who learns and grows with genuine joy.  
-I'm Joseph Greffen Komala, a Computer Science student who learns and grows with genuine joy.  
-
-I'm a cheerful person. i love interacting with other people, one of the reasons is because I get to hear their unique perspectives during our conversations. 
-
-Even so, I’m more of an introvert at heart.  
-I feel happiest in small groups, where conversations are cozy and full of meaning.  
-There’s just something special about laughing over inside jokes and sharing little moments that only a close circle would get — and I absolutely love that!
-
-I love seeing things from different perspectives,  sometimes I wonder, _what would it feel like to be someone else?_ What are they thinking? What would they do in a certain situation? That kind of curiosity drives me to explore the world more deeply.
-
-I also find a sense of calm in planning. Before jumping into something, I like to take a step back and figure things out first. It helps me feel grounded and clear-headed, so when it's time to act, I’m not lost.</div>
-
+        <p class="font-lusitana text-justify mb-3">I'm Joseph Greffen Komala — a Computer Science student who learns, grows, and explores with genuine joy.</p>
+        
+        <p class="font-lusitana text-justify mb-3" set:html={content.first}></p>
+        
+        <p class="font-lusitana text-justify mb-3" set:html={content.second}></p>
+        
+        <p class="font-lusitana text-justify mb-3" set:html={content.third}></p>
+        
+        <p class="font-lusitana text-justify" set:html={content.fourth}></p>
+    </div>
 </div>

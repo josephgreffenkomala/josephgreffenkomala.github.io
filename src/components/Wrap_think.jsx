@@ -9,15 +9,17 @@ export default function Wrap_think(props) {
   
 
   return (
-  <div className="flex  justify-around p-15 bg-fourth-light"> 
+  <div className="flex  justify-around p-15 bg-fourth-dark"> 
     
     
-        <div class="w-1/2 inline "> 
+        <div class="w-3/5 inline "> 
         <Content_think index={index} />
         </div>
   
-        
+        <div class="w-2/5 inline  "> 
         <Card_think index={index} setIndex={setIndex} />
+        </div>
+        
 
   </div>
   );

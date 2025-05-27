@@ -38,11 +38,7 @@ export default function Card_think(props) {
             <p className="font-lusitana text-lg text-center mt-20">{content.get(left)}</p>
           </div>
 
-          <div className={`border-2 bg-fourth w-[14em] h-[22em] rounded-2xl px-4 pt-15 mx-[-5em] transition ${isClicked ? 'motion-ease-in-out motion-scale-out-75 motion-blur-out-sm motion-translate-x-out-[-9em]' : 'z-10'}`}
-          style={{    
-          boxShadow: '5px 5px 5px 3px rgba(0, 0, 0, 1)'
-
-         }}
+          <div className={`border-2 bg-fourth w-[14em] h-[22em] rounded-2xl px-4 pt-15 mx-[-5em] transition ${isClicked ? 'motion-ease-in-out motion-scale-out-75 motion-blur-out-sm motion-translate-x-out-[-9em]' : 'z-10'} shadow-sm`}
           
           >
             <p className="font-itim font-bold text-2xl text-center mt-10">{header.get(cur)}</p>
