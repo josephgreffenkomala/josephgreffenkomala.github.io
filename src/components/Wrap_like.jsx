@@ -7,6 +7,7 @@ export default function Wrap_think(props) {
     <div className="pb-[3em] pt-[5em] pl-[5em] bg-fifth-light flex mt-15 "> 
       <div className="w-1/4  mb-4 pt-[7em] ">
         <p className="font-itim font-bold text-4xl">Things i <br></br>like to do</p>
+        <p className="font-lusituna text-lg mt-2">I love to do these things in my free time to recharge my energy and get rest from the work </p>
       </div>
       
       <div className="flex pt-14 pb-5 px-14 overflow-auto gap-10 ml-10 scroll-smooth 
@@ -20,12 +21,11 @@ export default function Wrap_think(props) {
       
       ">
 <div className="z-20 absolute h-[25em] translate-x-[-3.4rem] w-10 scale-115 bg-gradient-to-r from-fifth-light to-transparent"></div>
-        <Card_like color="fifth" />
-        <Card_like color="fourth"/>
-        <Card_like color="sixth"/>
-        <Card_like color="fifth" />
-        <Card_like color="fourth"/>
-        <Card_like color="sixth"/>
+        <Card_like color="fifth" title="Puzzle" subtitle="I love play Jigsaw Puzzle"/>
+        <Card_like color="fourth" title="Video Game" subtitle="I play Valorant, Genshin Impact, and some mobile games"/>
+        <Card_like color="sixth" title="walking" subtitle=""/>
+        <Card_like color="third" title="Origami" subtitle="I enjoy creating origami animals and flowers—"/>
+
           
 <div className="absolute h-[25em] right-0 w-10 bg-gradient-to-l from-fifth-light to-transparent scale-115"></div>
 

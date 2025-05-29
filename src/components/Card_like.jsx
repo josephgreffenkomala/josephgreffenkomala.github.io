@@ -19,7 +19,8 @@ export default function Card_like(props) {
       
         </div>
         <div className={`bg-white border-b-2 border-x-2 rounded-b-xl h-[5em]`}> 
-            
+            <p className="text-center text-lg font-bold pt-2">{props.title}</p>
+            <p className="text-center text-sm">{props.subtitle}</p>
 
         </div>
     </div>
