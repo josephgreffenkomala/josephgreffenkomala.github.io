@@ -4,7 +4,7 @@ import Card_like from "./Card_like";
 
 export default function Wrap_think(props) {
   return (
-    <div className="pb-[3em] pt-[5em] pl-[5em] bg-fifth-light flex mt-19 "> 
+    <div className="pb-[3em] pt-[5em] pl-[5em] bg-fifth-light flex mt-15 "> 
       <div className="w-1/4  mb-4 pt-[7em] ">
         <p className="font-itim font-bold text-4xl">Things i <br></br>like to do</p>
       </div>

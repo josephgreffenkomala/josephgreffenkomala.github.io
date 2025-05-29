@@ -35,10 +35,10 @@ export default function Wrap_other(props) {
   return (
     <div className="bg-fourth-light flex flex-col items-center justify-center h-screen">
       <div className="flex left-1/3 item-left overflow-auto w-full">
-        <Card_other className={` w-[20rem] blur-sm scale-75 translate-x-[10em] `} name={cur} image="joseph.jpg"  />
-        <Card_other className={` w-[40rem]  ${isClicked ? 'animate-left-lg' : 'z-10'} : ''}`} name={curData.name} image="joseph.jpg" content={curData.content}/>
-        <Card_other className={` w-[20rem] blur-sm scale-75 translate-x-[-10em] z-1 ${isClicked ? 'animate-zoom-lg' : ''} `} name={cur} image="joseph.jpg" />
-        <Card_other className={` right-2 z-0 w-[20rem] blur-sm scale-75 translate-x-[-10em] absolute`} name={cur} image="joseph.jpg"/>
+        <Card_other className={` w-[20rem] blur-sm scale-75 shadow-sm translate-x-[10em] `} name={cur} image="joseph.jpg"  />
+        <Card_other className={` w-[40rem] shadow-sm ${isClicked ? 'animate-left-lg' : 'z-10'} : ''}`} name={curData.name} image="joseph.jpg" content={curData.content}/>
+        <Card_other className={` w-[20rem] shadow-sm blur-sm scale-75 translate-x-[-10em] z-1 ${isClicked ? 'animate-zoom-lg' : ''} `} name={cur} image="joseph.jpg" />
+        <Card_other className={` shadow-sm z-0 w-[20rem] absolute right-3 blur-sm scale-75 translate-x-[-10em]`} name={cur} image="joseph.jpg"/>
         
         </div>
         <button

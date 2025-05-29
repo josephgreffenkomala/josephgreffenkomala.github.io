@@ -1,0 +1,33 @@
+---
+import astroLogo from '../assets/astro.svg';
+import background from '../assets/background.svg';
+
+import "../styles/global.css";
+const content = {
+    first:"This character trait can be a real strength when managed well — and over time, I’ve found a few ways to respond to it effectively.",
+    second:"I need to <b>write things down</b> to help me both <i>zoom out</i> and <i>zoom in</i> during analysis.",
+third:'I use <abbr title="Note-taking app, kinda like notion, but better">Obsidian</abbr> to map my thoughts and ideas.',    forth:"I always start by <b>defining the goal</b> of the analysis — knowing what I'm trying to answer helps me stay focused.",
+    fifth:" I begin with the <b>big picture first</b>, then gradually move into the details.",
+    sixth:"I also make time to <b>validate my thoughts with others</b>, to catch biases or blind spots I might’ve missed",
+    seventh:"<i>“With the right response, this character can be a strength rather than a weakness.”</i>",
+}
+---
+
+<div class="bg-sixth mt-10 p-10">
+    <h1 class="font-itim text-3xl mb-3">How I Respon This Character</h1>
+    <p class="font-lusituna text-lg" set:html={content.first}></p>
+    <ul class="list-disc pl-10 font-lusituna">
+    <li>
+        I need to <b>write things down</b> to help me both <i>zoom out</i> and <i>zoom in</i> during analysis.
+        <ul class="list-circle pl-8">
+            <li set:html={content.third}></li>
+        </ul>
+    </li>
+    <li set:html={content.forth}></li>
+    <li set:html={content.fifth}></li>
+    <li set:html={content.sixth}></li>
+    </ul>
+    <p class="font-lusituna text-lg mt-5" set:html={content.seventh}></p>
+
+    
+</div>

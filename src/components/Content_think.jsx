@@ -5,8 +5,8 @@ export default function Content_think(props) {
 
     const header= new Map([
     [0, "Think\nBefore Act"],
-    [1, "Struggles"],
-    [2, "Benefits"]
+    [2, "Struggles"],
+    [1, "Benefits"]
   ]); 
   const content= new Map([
     [0, "Just like I mentioned before, I’m a thoughtful person and I want to highlight this because it really shapes how I make decisions -- After all life is about series of taking decision right?. <br>I take decisions with a lot of careful consideration, because I genuinely want to choose the best possible decision. For me, decision-making is like a chain, each choice influences the next. That’s why I treat it seriously, even when it seems like a small decision. <br>But… does that mean I <i>always</i> make the best choice? <b>Actually, no.</b> Sometimes, I still end up making the wrong one. When that happens, I don’t beat myself up about it.  Even if the outcome isn’t ideal, I know I made that decision with the best of intentions and the best version of myself at the time.  <br>This mindset also makes me someone who almost <i>always</i> plans things out. Like i mention it before, Before I do something, I like to map it out first — thinking through what needs to be done, what I want to achieve, and how to get there.  So i can give my best."],

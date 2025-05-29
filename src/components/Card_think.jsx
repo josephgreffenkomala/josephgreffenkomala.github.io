@@ -17,13 +17,13 @@ export default function Card_think(props) {
 
   const header = new Map([
     [0, "Think\nBefore Act"],
-    [1, "Struggles"],
-    [2, "Benefits"]
+    [2, "Struggles"],
+    [1, "Benefits"]
   ]); 
   const content = new Map([
     [0, "this show how i always think before act"],
-    [1, "setiap hal yang kita lakukan pasti ada struggle nya"],
-    [2, "setiap hal yang kita lakukan pasti ada benefit nya"]
+    [2, "setiap hal yang kita lakukan pasti ada struggle nya"],
+    [1, "setiap hal yang kita lakukan pasti ada benefit nya"]
   ]);
   const cur = props.index;
   const left = (cur+2)%3;

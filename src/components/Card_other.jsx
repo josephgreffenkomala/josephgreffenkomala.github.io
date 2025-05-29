@@ -9,7 +9,7 @@ export default function Card_like(props) {
   
 
   return (
-    <div className={`h-[30rem] border-2 rounded-3xl shadow-sm bg-sixth p-10${props.className} ` }>
+    <div className={`h-[30rem] border-2 rounded-3xl bg-sixth p-10${props.className} ` }>
         <div className="flex ">
 
             <div className=" mr-4">
