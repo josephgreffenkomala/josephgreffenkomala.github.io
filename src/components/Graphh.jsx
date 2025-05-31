@@ -108,6 +108,7 @@ export default function Graphh(props) {
         >
           Focus Me
         </button>
+        <p className="font-lusitana" >note: "core" bisa di klik dan digeser</p>
       </div>
       
     </div>

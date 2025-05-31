@@ -9,7 +9,7 @@ export default function Wrap_think(props) {
   
 
   return (
-    <>
+    <div>
     <h1 className="bg-fourth-dark px-10 pb-2 pt-10 font-itim text-4xl text-fourth-light">
 How i decide: A Thoughtful Approach to Decisions  </h1>
     <p className="bg-fourth-dark px-10 font-lusitana text-lg text-fourth-light">
@@ -28,6 +28,6 @@ How i decide: A Thoughtful Approach to Decisions  </h1>
         
 
   </div>
-  </>
+  </div>
   );
 }
