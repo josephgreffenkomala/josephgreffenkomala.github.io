@@ -6,18 +6,33 @@ import Content_think from "./Content_think";
 
 export default function Card_like(props) {
   
+  const warna= new Map([
+    [0,"bg-sixth"],
+    [1,"bg-first"],
+    [2,"bg-second"],
+    [3,"bg-third"],
+    [4,"bg-fourth"],
+    [5,"bg-fifth"],
+    [6,"bg-sixth"],
+    [7,"bg-first"],
+    [8,"bg-second"],
+    [9,"bg-third"],
+    [10,"bg-fourth"],
+    [11,"bg-fifth"],
+    [12,"bg-sixth"],
   
-
+  ]);
+//   const bg= warna.get(props.index);
   return (
-    <div className={`h-[30rem] border-2 rounded-3xl bg-sixth p-10${props.className} ` }>
-        <div className="flex ">
+    <div className={`h-[30rem] border-2 rounded-3xl ${warna.get(props.index)} p-10${props.className} ` }>
+        <div className="flex justify-center flex-col items-center ">
 
-            <div className=" mr-4">
+            {/* <div className=" mr-4">
             <img src={props.image} className="rounded-full w-25 mb-4" />
-            </div>
-            <div className="text-left">
-                <p className="truncate font-itim text-3xl">{props.name}</p>
-                <p className="truncate font-lusitana text-lg">{props.title}</p>
+            </div> */}
+            <div className="text-center">
+                <p className="font-itim text-3xl">{props.name}</p>
+                <p className="font-lusitana text-lg">{props.title}</p>
             </div>
             
         </div>
@@ -31,7 +46,7 @@ export default function Card_like(props) {
   dark:[&::-webkit-scrollbar-track]:bg-neutral-700
   dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500
 ">
-            <p className="w-full"> {props.content}</p>
+            <p className="w-full" set:html={props.content} > {props.content}</p>
 
         </div>
     </div>

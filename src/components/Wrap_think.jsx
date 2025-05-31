@@ -9,6 +9,12 @@ export default function Wrap_think(props) {
   
 
   return (
+    <>
+    <h1 className="bg-fourth-dark px-10 pb-2 pt-10 font-itim text-4xl text-fourth-light">
+How i decide: A Thoughtful Approach to Decisions  </h1>
+    <p className="bg-fourth-dark px-10 font-lusitana text-lg text-fourth-light">
+      After all of that core, that would affect how I make decision. Here 's how make decisions
+      </p>
   <div className="flex  justify-around p-15 bg-fourth-dark"> 
     
     
@@ -22,5 +28,6 @@ export default function Wrap_think(props) {
         
 
   </div>
+  </>
   );
 }

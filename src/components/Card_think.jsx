@@ -17,13 +17,13 @@ export default function Card_think(props) {
 
   const header = new Map([
     [0, "Think\nBefore Act"],
-    [2, "Struggles"],
-    [1, "Benefits"]
+    [2, "What could go wrong?"],
+    [1, "Then what's good?"]
   ]); 
   const content = new Map([
-    [0, "this show how i always think before act"],
-    [2, "setiap hal yang kita lakukan pasti ada struggle nya"],
-    [1, "setiap hal yang kita lakukan pasti ada benefit nya"]
+    [0, "This show how i always think before act"],
+    [2, "Because every thoughtful step begins by knowing the risks"],
+    [1, "Seeing strengths that can be my advantage"]
   ]);
   const cur = props.index;
   const left = (cur+2)%3;
@@ -52,7 +52,7 @@ export default function Card_think(props) {
         </div>
         
         <button
-  className="px-3 py-1 w-28 bg-fourth-mid border-2 border-black mt-3 rounded-2xl font-lusitana font-bold text-md hover:bg-fourth hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out flex items-center justify-center gap-2"
+  className="px-3 py-1 w-28 bg-fourth-mid border-2 border-black mt-3 rounded-2xl font-lusitana font-bold text-md hover:bg-fourth hover:scale-105  transition-all duration-300 ease-in-out flex items-center justify-center gap-2"
   onClick={handleClick}
 >
   <span>Next</span>
