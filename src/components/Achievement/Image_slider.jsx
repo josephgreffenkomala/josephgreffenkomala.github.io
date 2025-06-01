@@ -27,14 +27,9 @@ export default function ImageSlider(props) {
   };
 
   // Auto next setiap 10 detik
-  useEffect(() => {
-    timerRef.current = setTimeout(() => {
-      changeImage("next");
-    }, 2000);
 
-    return () => clearTimeout(timerRef.current);
-  }, [index]); // reset timer setiap index berubah
 
+ 
   return (
     <div className={`${props.className} relative object-cover flex items-center justify-center w-fit mx-auto`}>
       <img

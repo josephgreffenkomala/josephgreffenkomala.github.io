@@ -12,6 +12,7 @@ import Card from '../components/Card.astro';
 import Competition from '../components/Achievement/Competition.astro';
 import Organ from '../components/Achievement/Organ.jsx';
 import Image_slider from '../components/Achievement/Image_slider.jsx';
+import Foot from '../components/Foot.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -23,7 +24,7 @@ import Image_slider from '../components/Achievement/Image_slider.jsx';
 	<Kuliah/>
 	<Competition/>
 	<Organ client:only="react"/>
-
+	<Foot></Foot>
 		
 	</Card>
 </Layout>

@@ -23,8 +23,8 @@ export default function Wrap_think(props) {
 <div className="z-20 absolute h-[25em] translate-x-[-3.4rem] w-10 scale-115 bg-gradient-to-r from-fifth-light to-transparent"></div>
         <Card_like image="puzzle.png" color="fifth" title="Puzzle" subtitle="I love play Jigsaw Puzzle"/>
         <Card_like image="game.png" color="sixth" title="Video Game" subtitle="I play Valorant, Genshin Impact, and some mobile games"/>
-        <Card_like image="origami.png" color="second" title="Origami" subtitle="I enjoy creating origami animals and flowers—"/>
-        <Card_like image="jalan.png" color="third" title="walking" subtitle=" "/>
+        <Card_like image="origami.png" color="second" title="Origami" subtitle="I enjoy creating origami animals and flowers"/>
+        <Card_like image="jalan.png" color="third" title="walking" subtitle="I love exploring what arounds me"/>
 
           
 <div className="absolute h-[25em] right-0 w-10 bg-gradient-to-l from-fifth-light to-transparent scale-115"></div>

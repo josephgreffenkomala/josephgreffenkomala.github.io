@@ -11,7 +11,13 @@ const orgData = {
       <><strong>Sospro (Social Project)</strong> — Event Division Staff</>,
       <><strong>GELEX (Gelanggang Expo)</strong> — Decoration Division Staff</>,
     ],
-    images: ["cat.png"],
+    images: [
+      "hc (1).jpg",
+      "hc (2).jpg",
+      "hc (3).jpg",
+
+
+    ],
   },
   oti: {
     name: "Omah TI",
@@ -21,7 +27,12 @@ const orgData = {
       <><strong>OLC (Omah TI Learning Class)</strong> — Event Coordinator</>,
       <><strong>OEMOEM</strong> — Event Staff</>,
     ],
-    images: ["cat.png"],
+    images: [
+      "oti (1).jpg",
+      "oti (2).jpeg",
+      
+
+    ],
   },
   pmk: {
     name: "PMK",
@@ -33,7 +44,11 @@ const orgData = {
       <><strong>Christmas 2023</strong> — Social Contribution Division Staff</>,
       <><strong>Christmas 2024</strong> — Vice Chief Executive</>,
     ],
-    images: ["cat.png"],
+    images: [
+      "pmk (1).jpg",
+      "pmk (3).jpg",
+      "pmk (2).JPG",
+    ],
   },
 };
 
@@ -52,8 +67,8 @@ export default function Organ() {
               onClick={() => setSelected(key)}
               className={`font-itim px-4 py-2 rounded-full w-1/3 text-center transition ${
                 selected === key
-                  ? "bg-first text-white scale-105"
-                  : "bg-fifth hover:bg-first hover:text-white"
+                  ? "bg-fifth-dark text-white scale-105"
+                  : "bg-fifth hover:bg-fifth-dark hover:text-white"
               }`}
             >
               {orgData[key].name.split(" ")[0]}

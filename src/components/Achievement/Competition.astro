@@ -2,7 +2,7 @@
 import Card from '../Card.astro';
 import ImageSlider from './Image_slider';
 const images = [
-  "datathon1.jpg",
+  "datathon1.JPG",
     "datathon2.jpg",
     "dataroyale.jpg",
     "findit.jpeg",
@@ -39,7 +39,7 @@ const images = [
       </li>
     </ul>
   </Card>
-  <div class="w-2/7 h-full m-10 flex items-center justify-center">
+  <div class="w-2/7 m-10 flex items-center justify-center">
     {/* You can replace this with an image or illustration */}
     <ImageSlider client:only="react" images={images} className="h-full w-full" />
   </div>
