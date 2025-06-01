@@ -1,0 +1,47 @@
+---
+import Card from '../Card.astro';
+import ImageSlider from './Image_slider';
+const images = [
+  "datathon1.jpg",
+    "datathon2.jpg",
+    "dataroyale.jpg",
+    "findit.jpeg",
+];
+---
+
+<div class="flex">
+  <Card w="w-4/7 m-10 bg-fourth">
+    <h1 class="font-itim text-3xl mb-2">Competition Achievements</h1>
+    <ul class="list-disc ml-5 space-y-3">
+      <li>
+        <span class="font-bold">Data Royale (2023):</span>
+        <span>
+          (2nd Place) Data Science Competition organized by Kotak Riset SC, Department of Computer Science and Electronics, and the Data Science and Artificial Intelligence Division of OmahTI. This competition honed my skills in various key aspects of data science, including data wrangling, exploratory data analysis, data manipulation, and modeling.
+        </span>
+      </li>
+      <li>
+        <span class="font-bold">Datathon (2024):</span>
+        <span>
+          (2nd Place) Data Science Competition organized by Ristek UI, where participants developed an AI model to detect fraudsters and created AI innovations in search engines.
+        </span>
+      </li>
+      <li>
+        <span class="font-bold">Compfest (2024):</span>
+        <span>
+          (Finalist) Data Analysis Competition involving the creation of a dashboard using Tableau software.
+        </span>
+      </li>
+      <li>
+        <span class="font-bold">Find IT (2025):</span>
+        <span>
+          (Finalist) Competitive Programming, where participant has to solve algorithmic challenges under time pressure using C++ and Python in a national-level coding competition.
+        </span>
+      </li>
+    </ul>
+  </Card>
+  <div class="w-2/7 h-full m-10 flex items-center justify-center">
+    {/* You can replace this with an image or illustration */}
+    <ImageSlider client:only="react" images={images} className="h-full w-full" />
+  </div>
+</div>
+

@@ -9,6 +9,9 @@ import Key from '../components/mission/key.astro';
 import Sma from '../components/Achievement/Sma.astro';
 import Kuliah from '../components/Achievement/Kuliah.astro';
 import Card from '../components/Card.astro';
+import Competition from '../components/Achievement/Competition.astro';
+import Organ from '../components/Achievement/Organ.jsx';
+import Image_slider from '../components/Achievement/Image_slider.jsx';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -18,7 +21,8 @@ import Card from '../components/Card.astro';
 	<Navbar/>
 	<Sma/>
 	<Kuliah/>
-	<Card>
+	<Competition/>
+	<Organ client:only="react"/>
 
 		
 	</Card>
