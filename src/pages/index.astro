@@ -6,6 +6,7 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import Joseph from '../components/Joseph.astro';
 import Achievement from '../components/Achievement.astro';
+import Skills from '../components/Skills.astro';
 import Foot from '../components/Foot.astro';
 import Wrap_other from '../components/Wrap_other.jsx';
 import Project_Wrap from '../components/project/Project_Wrap.jsx';
@@ -22,6 +23,7 @@ const projects = await getCollection('projects');
 	<Hero></Hero>
 	<Joseph></Joseph>
 	<Project_Wrap client:only="react" projects={projects} />
+	<Skills />
 	<Org></Org>
 	
 	<Achievement></Achievement>

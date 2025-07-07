@@ -164,10 +164,10 @@ ul {
 li {
     @apply mb-2;
 }
-
+/* 
 p {
     @apply mb-4     ;
-}
+} */
 
 /* Loading animation */
 @keyframes shimmer {

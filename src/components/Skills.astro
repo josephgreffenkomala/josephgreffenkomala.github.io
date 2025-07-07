@@ -1,0 +1,58 @@
+---
+import "../styles/global.css";
+
+const skills = [
+    { name: "Python", color: "first" },
+    { name: "JavaScript", color: "fifth" },
+    { name: "TypeScript", color: "fourth" },
+    { name: "SQL", color: "first" },
+    { name: "R", color: "sixth" },
+    { name: "Java", color: "second" },
+    { name: "Machine Learning", color: "fifth" },
+    { name: "Deep Learning", color: "first" },
+    { name: "TensorFlow", color: "fourth" },
+    { name: "PyTorch", color: "sixth" },
+    { name: "Scikit-learn", color: "second" },
+    { name: "Pandas", color: "fifth" },
+    { name: "NumPy", color: "first" },
+    { name: "React", color: "fourth" },
+    { name: "Next.js", color: "sixth" },
+    { name: "Astro", color: "second" },
+    { name: "Node.js", color: "fifth" },
+    { name: "HTML/CSS", color: "first" },
+    { name: "Tailwind CSS", color: "fourth" },
+    { name: "Git", color: "sixth" },
+    { name: "Docker", color: "second" },
+    { name: "VS Code", color: "fifth" },
+    { name: "Jupyter", color: "first" },
+    { name: "Figma", color: "fourth" },
+    { name: "Postman", color: "sixth" },
+    { name: "PostgreSQL", color: "second" },
+    { name: "MongoDB", color: "fifth" },
+    { name: "MySQL", color: "first" },
+    { name: "AWS", color: "fourth" },
+    { name: "Google Cloud", color: "sixth" },
+    { name: "Firebase", color: "second" },
+    { name: "Data Visualization", color: "fifth" },
+    { name: "Statistical Analysis", color: "first" },
+    { name: "Project Management", color: "fourth" },
+    { name: "Problem Solving", color: "sixth" },
+    { name: "Research", color: "second" }
+];
+---
+
+<div class="flex bg-third m-10 rounded-4xl p-10 border-2 shadow-sm">
+    <div class="w-full">
+        <h2 class="text-4xl font-bold mb-6 font-itim text-center">Skills</h2>
+        
+        <div class="text-center">
+            <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+                {skills.map((skill) => (
+                    <span class={`bg-white/90 text-${skill.color} px-4 py-2 rounded-full font-itim text-bold-900 text-sm font-medium shadow-sm border border-${skill.color}/20`}>
+                        {skill.name}
+                    </span>
+                ))}
+            </div>
+        </div>
+    </div>
+</div>
