@@ -17,7 +17,7 @@ export default function Project_Wrap({ projects }) {
     <div className=" m-10 px-4 py-12 border-2 border-black bg-base/70 rounded-4xl">
       {/* Header */}
       <div className="text-center mb-8">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-4xl font-bold font-itim text-gray-900 mb-4">
           My Projects
         </h2>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
