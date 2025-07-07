@@ -98,12 +98,10 @@ My primary contributions to this project included:
 
 ## 🔗 Attachments
 
-* **Final Project Report (Laporan Akhir Proyek):** [Link to PDF](APznzaYyxP3O5FwAw5vdNwsMgSULaZZTn3pzJ2C9SK60CPVnyLhWxCVnK_5XHmcO2n3JmtHr9sRYZDHkpJtDThK9euqN0_Pq-bSfKXJbpVzvi9U1UhFfQ_6QXK-7NWvuPmbxJj2bTYwHT_2vviT-P-mIfW2aakLMXFAdFDHOxlOb3vIBfxoT2jHzzOa8o-DrytCVgSKsMOLUFV2Z3pXstA.pdf)
+* **Final Project Report (Laporan Akhir Proyek):** [Click Here to get PDF](https://github.com/josephgreffenkomala/api_gateway/blob/c121132286d2950943d23173ea1b59dd014e423f/Laporan%20Akhir.pdf)
 * **GitHub Repository (API Gateway - My Contribution):** [https://github.com/josephgreffenkomala/api_gateway](https://github.com/josephgreffenkomala/api_gateway)
 * **GitHub Repository (AI Service - Hafid):** [HafidAmbardi/AIfeedackservice](https://github.com/HafidAmbardi/AIfeedackservice)
 * **GitHub Repository (User Authentication - Nugroho):** [https://github.com/csfighterrr/scalable-auth](https://github.com/csfighterrr/scalable-auth)
 * **GitHub Repository (Progress Tracking - David):** [https://github.com/david-irvinne/progress_tracking_service](https://github.com/david-irvinne/progress_tracking_service)
-* **Architecture Diagram:**
-    ![a](./../images/project/Pastedimage20250705063755.png)
 
 ---

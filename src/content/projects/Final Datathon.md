@@ -13,7 +13,7 @@ tags:
   - AI
 date: 2024-06-01
 featured: true
-github: https://github.com/username/enhanced-multimodal-search
+github: https://github.com/
 demo:
 ---
 # Integration of Named Entity Recognition (NER) and Trend-Based Query Expansion to Enhance Multimodal Search Engine Relevance
@@ -58,6 +58,7 @@ The fine-tuned QueryNER model showed striking improvements over the baseline mod
 | Recall | 0.307 | **0.907** |
 | F1 Score | 0.312 | **0.907** |
 
+
 The fine-tuned model achieved a much lower loss value (0.425 vs 5.972). Evaluation metrics such as accuracy, precision, recall, and F1 score also exhibited significant improvement, with the average metric score for the fine-tuned model reaching 0.907, nearly three times higher than the baseline model.
 
 ### 2. Search Engine with Trend-Based Query Expansion Performance
@@ -65,7 +66,7 @@ Visual examples illustrate the impact of trend expansion on search results:
 * The top threeimage show results without trend expansion, while the bottom threeimage show the top rankings using trend expansion.
 * It is evident that temporal context greatly influences the outcomes. For instance, for queries related to Olympic equipment, the system recommends Olympic merchandise as it aligns with the trending topic.
 
-!(Pastedimage20250707012110.png)
+![aa](./../images/project/olympic.webp)
 ![aa](./../images/project/Pastedimage20250707012147.png)
 ![aa](./../images/project/Pastedimage20250707012201.png)
 ### 3. User Survey (A/B Testing)
@@ -93,6 +94,5 @@ For future work, several areas have been identified to further enhance the syste
 * **Continuous Learning and Model Updates**: Establishing mechanisms for continuous learning and regular model updates would ensure the system remains relevant and effective over time.
 
 ## 🔗 Attachments
-* **GitHub Repository:** [Link to GitHub Repository] (Please provide the actual GitHub link if available, as it was mentioned in the initial prompt but not explicitly in the PDFs.)
 * **Technical Report:** [Stack Overfit_Laporan Teknis (1).pdf](Stack%20Overfit_Laporan%20Teknis%20(1).pdf)
 * **Presentation Slides:** [Stack Overfit_Presentasi (1) (1).pdf](Stack%20Overfit_Presentasi%20(1)%20(1).pdf)

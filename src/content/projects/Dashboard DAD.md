@@ -34,7 +34,7 @@ You can check the published original dashboard here:
 ![images/project/Pastedimage20250707011735.png](./../images/project/Pastedimage20250707011735.png)
 
 
-[https://public.tableau.com/app/profile/joseph.greffen.komala/viz/IgnoreWarnings/joseph?publish=yes](https://public.tableau.com/app/profile/joseph.greffen.komala/viz/IgnoreWarnings/joseph?publish=yes)
+[Dashboard](https://public.tableau.com/app/profile/joseph.greffen.komala/viz/IgnoreWarnings/joseph?publish=yes)
 ## Key Insights and Dashboard Features
 
 The dashboard offers a detailed analysis of the affordability of higher education in Indonesia through multiple visualizations and interactive elements. This dashboard not only highlights economic barriers to higher education but also serves as a tool for stakeholders to design targeted interventions that bridge accessibility gaps.
@@ -70,6 +70,6 @@ Beyond the core objectives, the dashboard also presents other crucial informatio
 - **Public Perception of Education:** Insights into general public sentiment regarding education are also provided.
 - **University Distribution and Scholarships:** The dashboard features visualizations showing the number and ratio of universities in each province. It also highlights scholarship programs as effective initiatives to promote education and accessibility.
 
-### Lampiran:
-- Data Source and Documentation:  https://drive.google.com/file/d/1KMZEy6qXwUG61b4F8sBYz_FKkocxDz8s/view?usp=sharing
-- Dashboard: [https://public.tableau.com/app/profile/joseph.greffen.komala/viz/IgnoreWarnings/joseph?publish=yes](https://public.tableau.com/app/profile/joseph.greffen.komala/viz/IgnoreWarnings/joseph?publish=yes)
+### Lampiran: 
+- **📊 Data Source and Documentation:** [**View Data Source & Documentation**](https://drive.google.com/file/d/1KMZEy6qXwUG61b4F8sBYz_FKkocxDz8s/view?usp=sharing)
+- **📈 Dashboard:** [**Interactive Dashboard | Public Tableau**](https://public.tableau.com/app/profile/joseph.greffen.komala/viz/IgnoreWarnings/joseph?publish=yes)

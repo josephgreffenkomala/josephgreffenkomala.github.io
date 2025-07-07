@@ -39,7 +39,7 @@ Here is a detailed explanation of each key stage in the implemented methodology:
 This stage is crucial for improving image quality and preparing it for more accurate detection.
 * **HSV Color Space Conversion (HSV Conversion)**:
     * The HSV (Hue, Saturation, Value) color model is used because it is more effective in separating license plate areas from background noise, especially under dynamic lighting conditions. This contrasts with the RGB model, which is heavily influenced by illumination.
-    * Hue (H) represents color by degree (e.g., green: $120^{\circ}$), Saturation (S) indicates color purity (0: gray), and Value (V) is the brightness level.
+    * Hue (H) represents color by degree (e.g., green: **120°**), Saturation (S) indicates color purity (0: gray), and Value (V) is the brightness level.
 * **Banalization (Binarization)**:
 	* ![a](./../images/project/Pastedimage20250707012940.png)
     * After HSV conversion, the image is transformed into a binary (black-and-white) format. This process is performed separately on each channel (H, S, V) of the converted HSV image, and then an AND operation is applied to eliminate most background interference.
@@ -66,13 +66,13 @@ Once the license plate is successfully cropped, the next step is to separate eac
 For the character recognition stage, we chose to use a Convolutional Neural Network (CNN). CNN models are highly effective for image recognition tasks due to their ability to automatically extract features.
 
 * **CNN Architecture:** The CNN architecture we used consists of several convolutional layers, pooling layers, and fully connected layers.
-    * **Conv1:** 96 filters with $11\times11$ kernel, stride 4.
-    * **Pool1:** Max pooling with $3\times3$ kernel, stride 2.
-    * **Conv2:** 256 filters with $5\times5$ kernel, padding 2.
-    * **Pool2:** Max pooling with $3\times3$ kernel, stride 2.
-    * **Conv3 & Conv4:** 384 filters each with $3\times3$ kernel, padding 1 (no pooling layers).
-    * **Conv5:** 256 filters with $3\times3$ kernel, padding 1.
-    * **Pool3:** Max pooling with $3\times3$ kernel, stride 2.
+    * **Conv1:** 96 filters with **11×11** kernel, stride 4.
+    * **Pool1:** Max pooling with **3×3** kernel, stride 2.
+    * **Conv2:** 256 filters with **5×5** kernel, padding 2.
+    * **Pool2:** Max pooling with **3×3** kernel, stride 2.
+    * **Conv3 & Conv4:** 384 filters each with **3×3** kernel, padding 1 (no pooling layers).
+    * **Conv5:** 256 filters with **3×3** kernel, padding 1.
+    * **Pool3:** Max pooling with **3×3** kernel, stride 2.
     * **FC6 & FC7:** Fully connected layers with 4096 neurons.
     * **FC8:** Fully connected layer with 65 neurons for output probability prediction of characters.
 
@@ -92,6 +92,8 @@ The reference paper also provides a comparison of accuracy and detection time wi
 | Pattern matching method | 80.4% | 0.192 |
 | CNN | 98.8% | 1.16 |
 | The comprehensive model of this paper | 96.9% | 0.517 |
+
+
 *Note: This table is from the reference paper and shows the accuracy of the "comprehensive" model within that paper's context, which also refers to the use of CNN.*
 
 **Example Detection Results:**

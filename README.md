@@ -1,52 +1,86 @@
-<<<<<<< HEAD
-# portofolio
-=======
-# Astro Starter Kit: Basics
+# Joseph Greffen Komala - Portfolio
 
-```sh
-npm create astro@latest -- --template basics
+Personal portfolio website showcasing my work in data science, AI, and competitive programming. Built with Astro and modern web technologies.
+
+## 🌟 Features
+
+- **Responsive Design**: Optimized for all device sizes
+- **Interactive Projects**: Detailed project showcases with live demos
+- **Contact Integration**: Direct email integration with Gmail
+- **Modern UI**: Clean and professional design
+- **Fast Performance**: Built with Astro for optimal loading speeds
+
+## 🛠️ Technologies Used
+
+- **Framework**: Astro 5.7+
+- **Styling**: TailwindCSS with custom motion plugins
+- **Interactive Elements**: React components
+- **Charts**: Chart.js with React integration
+- **Network Visualization**: vis-network
+- **Content Management**: Astro Content Collections
+
+## 🚀 Development
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/josephgreffenkomala/portofolio.git
+   cd portofolio
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+5. **Preview production build**
+   ```bash
+   npm run preview
+   ```
+
+## 📁 Project Structure
+
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
-├── public/
-│   └── favicon.svg
+├── public/              # Static assets (images, CV, etc.)
 ├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
+│   ├── components/      # Reusable UI components
+│   ├── content/         # Content collections (projects, etc.)
+│   ├── layouts/         # Page layouts
+│   ├── pages/           # Route pages
+│   └── styles/          # Global styles
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🎯 Features Highlights
 
-## 🧞 Commands
+- **Project Showcase**: Interactive project filtering and detailed case studies
+- **Skills Visualization**: Interactive charts showing technical proficiencies
+- **Organization Experience**: Detailed timeline of organizational involvement
+- **Contact Form**: Direct Gmail integration for seamless communication
+- **CV Download**: Easy access to downloadable resume
 
-All commands are run from the root of the project, from a terminal:
+## � Contact
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- **Email**: josephgreffenkomala@mail.ugm.ac.id
+- **LinkedIn**: [Joseph Greffen Komala](https://www.linkedin.com/in/joseph-greffen-komala-ab1848293/)
+- **GitHub**: [josephgreffenkomala](https://github.com/josephgreffenkomala)
 
-## 👀 Want to learn more?
+## 📄 License
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
->>>>>>> f9fa5eb (initial)
+This project is personal portfolio content. Please respect intellectual property rights.
