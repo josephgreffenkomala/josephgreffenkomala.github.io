@@ -3,20 +3,54 @@ import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 import "../styles/global.css";
 ---
-<div class="m-4 text-sm flex items-center justify-between p-4 top-0 z-100 bg-white  border-2 rounded-2xl sticky">
+<div class="m-4 text-sm flex items-center justify-between p-4 top-0 z-100 bg-white border-2 rounded-2xl sticky">
     <a href="/" class="flex items-center bg-midnight">
-        <span class="ml-5 font-bold text-tide font-itim tracking-[0.4em]">J   O   S   E   P   H</span>
+        <span class="ml-2 sm:ml-5 font-bold text-tide font-itim tracking-[0.2em] sm:tracking-[0.4em] text-xs sm:text-sm">J   O   S   E   P   H</span>
     </a>
-    <nav class="flex space-x-8 mr-10 ">
+    
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-8 mr-10">
         <a href="/" class="text-black hover:text-gray-800 font-itim">About Me</a>
-        <a href="/unique-things" class="text-black hover:text-gray-800 font-itim">Unique Things</a>
-        <a href="/mission" class="text-black hover:text-gray-800 font-itim">Mission Statements</a>
-        <a href="/achievement" class="text-black hover:text-gray-800 font-itim">Achievements</a>
-
-
-        
+        <a href="/projects" class="text-black hover:text-gray-800 font-itim">Projects</a>
     </nav>
 
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="md:hidden mr-2 p-2 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
 
-    
+    <!-- Mobile Navigation (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-4 right-4 mt-2 bg-white border-2 rounded-2xl shadow-lg z-50">
+        <nav class="flex flex-col p-4 space-y-4">
+            <a href="/" class="text-black hover:text-gray-800 font-itim py-2 px-4 rounded-lg hover:bg-gray-100">About Me</a>
+            <a href="/projects" class="text-black hover:text-gray-800 font-itim py-2 px-4 rounded-lg hover:bg-gray-100">Projects</a>
+        </nav>
+    </div>
 </div>
+
+<script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn?.addEventListener('click', () => {
+        mobileMenu?.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (event) => {
+        const target = event.target as HTMLElement;
+        if (!mobileMenuBtn?.contains(target) && !mobileMenu?.contains(target)) {
+            mobileMenu?.classList.add('hidden');
+        }
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = mobileMenu?.querySelectorAll('a');
+    mobileLinks?.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu?.classList.add('hidden');
+        });
+    });
+</script>

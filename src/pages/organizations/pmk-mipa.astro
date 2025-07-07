@@ -1,0 +1,98 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Foot from '../../components/Foot.astro';
+
+const projects = [
+  {
+    title: "Christmas PMK MIPA 2024",
+    period: "Oct 2024 - Dec 2024",
+    position: "Vice Project Officer",
+    description: "Annual Christmas event organized by PMK MIPA, consisting of two major parts: a celebration service and a social outreach activity.",
+    achievements: [
+      "Supervised and guided the Christmas committee across multiple divisions.",
+      "Prepared weekly devotions and reflections for more than 5 weeks",
+      "Led devotions during 3 large plenary meetings, fostering spiritual unity and shared purpose.",
+      "Participated in and supported preparations throughout all major meetings to ensure smooth coordination",
+      "Oversaw the implementation of both the service and the community food distribution program."
+    ]
+  },
+  {
+    title: "Christmas PMK MIPA 2023",
+    period: "Oct 2023 - Dec 2023",
+    position: "Staff of Social Service",
+    description: "Social outreach program held at a local orphanage as part of the annual Christmas celebration by PMK MIPA.",
+    achievements: [
+      "Successfully organized a social service activity involving approximately 20 children, facilitating games, fellowship, and gift-giving to create an engaging and meaningful experience.",
+      "Acted as the primary liaison between PMK MIPA and the orphanage, ensuring smooth communication, coordination, and alignment of event goals.",
+      "Drafted the Terms of Reference (TOR) to define event scope, objectives, and division responsibilities."
+    ]
+  },
+  {
+    title: "Panitia Pay It Forward 2024",
+    period: "Mar 2024 - May 2024",
+    position: "Staff of Content Development (Pemateri)",
+    description: "Community development program in Jetis Village, held in collaboration with Sukunan Village, promoting local waste management education.",
+    achievements: [
+      "Created and presented a session introducing Sukunan Village as a successful real-life example of community-based waste management.",
+      "Facilitated an interactive, waste-themed card game for children to reinforce learning through play.",
+      "Conducted a brief analysis on the urgency of waste education in Yogyakarta to support content relevance."
+    ]
+  }
+];
+---
+
+<Layout title="PMK MIPA - Organization Details">
+  <Navbar />
+  
+  <div class="min-h-screen bg-base">
+    <div class="container mx-auto px-4 py-8">
+      <!-- Back Button -->
+      <div class="mb-8">
+        <a href="/" class="inline-flex items-center text-sixth hover:text-sixth-dark transition-colors">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+          </svg>
+          Back to Portfolio
+        </a>
+      </div>
+
+      <!-- Organization Header -->
+      <div class="bg-sixth rounded-4xl p-8 mb-8 border-2 shadow-sm">
+        <h1 class="text-4xl font-bold text-white mb-4 font-itim">Persekutuan Mahasiswa Kristen (PMK) MIPA</h1>
+        <p class="text-white/90 text-lg font-lusitana">Student Christian fellowship organization within the Faculty of Mathematics and Natural Sciences</p>
+        <div class="mt-4">
+          <span class="bg-white text-sixth px-4 py-2 rounded-full text-sm font-medium">Mar 2024 - Dec 2024</span>
+          <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium ml-2">Human Resource (Internal) Staff</span>
+        </div>
+      </div>
+
+      <!-- Projects/Events -->
+      <div class="space-y-6">
+        <h2 class="text-3xl font-bold font-itim text-center mb-8">Related Event Committee Experiences</h2>
+        
+        {projects.map((project) => (
+          <div class="bg-white rounded-4xl p-6 border-2 shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="flex justify-between items-start mb-4 flex-wrap gap-2">
+              <h3 class="text-2xl font-bold font-itim text-gray-800">{project.title}</h3>
+              <span class="bg-sixth text-white px-3 py-1 rounded-full text-sm font-medium">{project.period}</span>
+            </div>
+            
+            <h4 class="text-lg font-bold text-sixth mb-2 font-lusitana">{project.position}</h4>
+            <p class="text-gray-600 mb-4 font-lusitana italic">{project.description}</p>
+            
+            <div class="space-y-2">
+              <ul class="list-disc list-inside space-y-2 text-sixth">
+                {project.achievements.map((achievement) => (
+                  <li class="text-gray-700 text-sm leading-relaxed font-lusitana">{achievement}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+  
+  <Foot />
+</Layout>

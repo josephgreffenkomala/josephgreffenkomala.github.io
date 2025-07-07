@@ -3,24 +3,26 @@ import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 import "../styles/global.css";
 ---
-<div class="bg-white py-15 mt-5">
-    <div class="ml-[20em] flex ">
-        <div class="">
-            <img src="/cat.png" alt="joseph" class ="" />
-        
+<div class="bg-white py-8 sm:py-15 mt-5 justify-center items-center flex flex-col relative overflow-hidden">
+    <div class="flex flex-col lg:flex-row justify-center items-center w-full max-w-6xl mx-auto px-4 gap-6 lg:gap-0">
+        <!-- Profile Image -->
+        <div class="flex-shrink-0">
+            <img src="/joseph.jpg" alt="joseph" class="w-48 h-48 sm:w-64 sm:h-64 lg:w-[30vw] lg:h-auto lg:max-w-sm rounded-full object-cover" />
         </div>
         
-        <div class="flex flex-col justify-center ml-10">
-    <p class="font-itim text-3xl mb-2">Hello there!</p>
-    <p class="font-itim text-5xl mb-4">Ever met someone <br>who explore with a plan?</p>
-    <p class="font-itim text-lg mb-1">
-        That's me, <span class="text-xl text-fifth font-bold">Joseph</span>
-    </p>
-    <p class="font-itim mb-6">Welcome to my little world.</p>
-    <p class="font-itim mt-8  text-gray-500">Scroll down to explore more about me!</p>
-</div>
+        <!-- Text Content -->
+        <div class="flex flex-col justify-center lg:ml-10 text-center lg:text-left">
+            <p class="font-itim text-2xl sm:text-3xl mb-2">Hello there!</p>
+            <p class="font-itim text-3xl sm:text-4xl lg:text-5xl mb-4 leading-tight">
+                Seeking the competitive edge in <b>data science and AI?</b>
+            </p>
+            <p class="font-itim text-black sm:text-lg mb-1">
+                That's me, <span class="text-lg sm:text-xl text-fifth font-bold">Joseph</span>
+            </p>
+            <p class="font-itim mb-6">Welcome to my little world.</p>
+            <p class="font-itim mt-4 sm:mt-8 text-gray-500 text-sm sm:text-gray-600">
+                Scroll down to explore more about me!
+            </p>
+        </div>
     </div>
-
-
-    
 </div>

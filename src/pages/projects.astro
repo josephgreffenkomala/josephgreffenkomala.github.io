@@ -1,0 +1,20 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Layout from '../layouts/Layout.astro';
+import Foot from '../components/Foot.astro';
+import Project_Wrap from '../components/project/Project_Wrap.jsx';
+import { getCollection } from 'astro:content';
+
+// Get all projects from the content collection
+const projects = await getCollection('projects');
+
+---
+
+<Layout>
+	
+	<Navbar/>
+
+	<Project_Wrap client:only="react" projects={projects} />
+	<Foot>
+	
+</Layout>

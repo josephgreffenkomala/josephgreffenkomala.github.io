@@ -1,18 +1,19 @@
 ---
 import Navbar from '../components/Navbar.astro';
-import Wrap from '../components/Wrap.jsx';
-import Wrap_think from '../components/Wrap_think.jsx';
+import Org from '../components/Org.astro';
+
 import Layout from '../layouts/Layout.astro';
-import "../styles/global.css";
 import Hero from '../components/Hero.astro';
 import Joseph from '../components/Joseph.astro';
-import Wrap_like from '../components/Wrap_like.jsx';
+import Achievement from '../components/Achievement.astro';
 import Foot from '../components/Foot.astro';
 import Wrap_other from '../components/Wrap_other.jsx';
-// import Respon from '../components/Respon.jsx';
-import Wrap_respon from '../components/Wrap_respon.astro';
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Project_Wrap from '../components/project/Project_Wrap.jsx';
+import { getCollection } from 'astro:content';
+
+// Get all projects from the content collection
+const projects = await getCollection('projects');
+
 ---
 
 <Layout>
@@ -20,11 +21,11 @@ import Wrap_respon from '../components/Wrap_respon.astro';
 	<Navbar/>
 	<Hero></Hero>
 	<Joseph></Joseph>
-    <Wrap client:only="react"/>
-	<Wrap_think client:only="react"/>
-	<Wrap_respon />
-	<Wrap_like client:only="react" />
-	<Wrap_other client:only="react" />
+	<Project_Wrap client:only="react" projects={projects} />
+	<Org></Org>
+	
+	<Achievement></Achievement>
+	<!-- <Wrap_other client:only="react" /> -->
 	<Foot>
 	
 </Layout>

@@ -1,0 +1,99 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Foot from '../../components/Foot.astro';
+
+const achievements = [
+  "Awarded Best Staff in the Human Capital Division for exceptional dedication and performance.",
+  "Assisted the UI (Unity Initiative) division in more than 5 programs.",
+  "Selected the Staff of the Month for the UI (Unity Initiative) division each month for 7 months.",
+  "Created the TSAchievement Post (November Edition), a 20-slide publication summarizing individual achievements of TSA members, aimed at celebrating and motivating scholar excellence."
+];
+
+const relatedEvents = [
+  {
+    title: "Sosial Project TSA UGM 2024",
+    period: "Jun 2024 - Nov 2024",
+    position: "Staff of Event Division",
+    description: "A social initiative held at SD Pogung Kidul focusing on disaster education for children.",
+    achievements: [
+      "Participated in the development of event concepts and educational content.",
+      "Created interactive games for around 40 children aged 7–9 to reinforce disaster awareness.",
+      "Accompanied and guided children throughout the session to ensure meaningful engagement."
+    ]
+  }
+];
+---
+
+<Layout title="TSA - Organization Details">
+  <Navbar />
+  
+  <div class="min-h-screen bg-base">
+    <div class="container mx-auto px-4 py-8">
+      <!-- Back Button -->
+      <div class="mb-8">
+        <a href="/" class="inline-flex items-center text-first hover:text-first-dark transition-colors">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+          </svg>
+          Back to Portfolio
+        </a>
+      </div>
+
+      <!-- Organization Header -->
+      <div class="bg-first rounded-4xl p-8 mb-8 border-2 shadow-sm">
+        <h1 class="text-4xl font-bold text-white mb-4 font-itim">Tanoto Scholars Association</h1>
+        <p class="text-white/90 text-lg font-lusitana">Student organization under the Tanoto Foundation Scholarship aimed at leadership and social contribution development.</p>
+        <div class="mt-4">
+          <span class="bg-white text-first px-4 py-2 rounded-full text-sm font-medium">Feb 2024 - Dec 2024</span>
+          <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium ml-2">Human Capital Staff</span>
+        </div>
+      </div>
+
+      <!-- Achievements -->
+      <div class="bg-white rounded-4xl p-6 border-2 shadow-sm mb-8">
+        <h2 class="text-3xl font-bold font-itim text-center mb-8">Key Achievements</h2>
+        
+        <div class="space-y-4">
+          {achievements.map((achievement) => (
+            <div class="flex items-start gap-4 p-4 bg-first/10 rounded-2xl">
+              <div class="bg-first rounded-full p-2 mt-1">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <p class="text-gray-700 leading-relaxed font-lusitana">{achievement}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Related Events -->
+      <div class="space-y-6">
+        <h2 class="text-3xl font-bold font-itim text-center mb-8">Related Event Committee Experiences</h2>
+        
+        {relatedEvents.map((event) => (
+          <div class="bg-white rounded-4xl p-6 border-2 shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="flex justify-between items-start mb-4 flex-wrap gap-2">
+              <h3 class="text-2xl font-bold font-itim text-gray-800">{event.title}</h3>
+              <span class="bg-first text-white px-3 py-1 rounded-full text-sm font-medium">{event.period}</span>
+            </div>
+            
+            <h4 class="text-lg font-bold text-first mb-2 font-lusitana">{event.position}</h4>
+            <p class="text-gray-600 mb-4 font-lusitana italic">{event.description}</p>
+            
+            <div class="space-y-2">
+              <ul class="list-disc list-inside space-y-2 text-first">
+                {event.achievements.map((achievement) => (
+                  <li class="text-gray-700 text-sm leading-relaxed font-lusitana">{achievement}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+  
+  <Foot />
+</Layout>

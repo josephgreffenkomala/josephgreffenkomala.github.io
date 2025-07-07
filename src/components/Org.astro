@@ -1,0 +1,79 @@
+---
+const organizations = [
+  {
+    name: "Omah TI",
+    period: "Feb 2024 - Dec 2024",
+    position: "Data Science and AI Staff & Skill Development Staff",
+    description: "A student-led tech community focused on skill development and applied learning in computer science.",
+    achievements: [
+      "Provided academic tutoring for computer science subjects during the 2024 Even Semester Final Exams, supporting over 100 students in understanding foundational concepts.",
+      "Ensured the smooth execution of Front-End Development and Mobile App Development training sessions over a period of 11 months.",
+      "Actively attended technical trainings and completed assignments related to data science and machine learning.",
+      "Worked on major projects involving Natural Language Processing (NLP) and Recommendation Systems, applying theoretical knowledge to practical problem-solving."
+    ],
+    link: "/organizations/omah-ti",
+    color: "fourth"
+  },
+  {
+    name: "Tanoto Scholars Association",
+    period: "Feb 2024 - Dec 2024",
+    position: "Human Capital Staff",
+    description: "Student organization under the Tanoto Foundation Scholarship aimed at leadership and social contribution development.",
+    achievements: [
+      "Awarded Best Staff in the Human Capital Division for exceptional dedication and performance.",
+      "Assisted the UI (Unity Initiative) division in more than 5 programs.",
+      "Selected the Staff of the Month for the UI (Unity Initiative) division each month for 7 months.",
+      "Created the TSAchievement Post (November Edition), a 20-slide publication summarizing individual achievements of TSA members, aimed at celebrating and motivating scholar excellence."
+    ],
+    link: "/organizations/tsa",
+    color: "first"
+  },
+  {
+    name: "Persekutuan Mahasiswa Kristen (PMK) MIPA",
+    period: "Mar 2024 - Dec 2024",
+    position: "Human Resource (Internal) Staff",
+    description: "Student Christian fellowship organization within the Faculty of Mathematics and Natural Sciences.",
+    achievements: [
+      "Coordinated birthday celebrations for over 100 active PMK members, fostering a sense of belonging and care.",
+      "Organized a bonding night for the PMK MIPA 2024 committee to strengthen internal connections and teamwork.",
+      "Maintained and updated the PMK database to ensure accurate internal records and effective communication.",
+      "Contributed to internal engagement efforts by supporting member appreciation and retention initiatives."
+    ],
+    link: "/organizations/pmk-mipa",
+    color: "sixth"
+  }
+];
+---
+
+<div class="m-10">
+  <h2 class="text-4xl font-bold mb-8 font-itim text-center">Organization Experiences</h2>
+  
+  <div class="space-y-6">
+    {organizations.map((org) => (
+      <a href={org.link} class={`block bg-${org.color} rounded-4xl p-6 border-2 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 group`}>
+        <div class="flex justify-between items-start mb-4 flex-wrap gap-2">
+          <h3 class="text-2xl font-bold font-itim text-white group-hover:text-yellow-100 transition-colors">{org.name}</h3>
+          <span class={`bg-white text-${org.color} px-3 py-1 rounded-full text-sm font-medium`}>{org.period}</span>
+        </div>
+        
+        <h4 class="text-lg font-bold text-white mb-2 font-lusitana">{org.position}</h4>
+        <p class="text-white/90 mb-4 font-lusitana italic">{org.description}</p>
+        
+        <div class="space-y-2">
+          <ul class="list-disc list-inside space-y-2 text-yellow-300">
+            {org.achievements.map((achievement) => (
+              <li class="text-white/90 text-sm leading-relaxed font-lusitana">{achievement}</li>
+            ))}
+          </ul>
+        </div>
+        
+        <div class="mt-4 flex items-center justify-end text-white/80 group-hover:text-white transition-colors">
+          <span class="text-sm font-medium">Click to view details</span>
+          <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </div>
+      </a>
+    ))}
+  </div>
+</div>

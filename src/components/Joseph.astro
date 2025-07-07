@@ -1,28 +1,17 @@
 ---
 const content={
-    first:`Joy is something I bring with me wherever I go. <br> So when I'm around others, that cheerfulness naturally shows up too. I love cracking jokes (even sometimes its just a dad jokes), i laughing, and teasing my friend.    `,
-    second:`I also really enjoy hearing other people’s perspectives. For me, it feels like catching a glimpse into another world — one shaped by different stories, values, and experiences.
-It reminds me how diverse we are. I've always been fascinated by that diversity and drives me to curiosity about other perspective. Sometimes I even catch myself wondering: <i>What would it feel like to be someone else? What are they thinking? How would they respond in a particular moment?</i>`,
-    third:  `Even as someone who enjoys social interaction, I’m an <b>introvert</b>.  
-I feel most at home in small, close-knit groups, where conversations go beyond the surface. Inside jokes, thoughtful talks, shared silences? Count me in!`,
-    fourth:`I also find a sense of calm in planning. Before jumping into something, I like to take a step back and figure things out first. It helps me feel grounded and clear-headed, so when it's time to act, I’m not lost.`
+    first:`As a Computer Science student at Universitas Gadjah Mada, I bring a strong interest and foundational experience in data processing and artificial intelligence. My skills encompass data wrangling, exploratory data analysis, data manipulation, and modeling, honed through various data science competitions where I achieved top placements. I am proficient in Python, Pandas, Scikit-Learn, PyTorch, Docker, Kubernetes, and Tableau, with interests in Machine Learning, NLP, Computer Vision, Recommendation Systems, LLM, and Reinforcement Learning.<br> 
+<br> Beyond technical skills, I have a passion for learning and exploring new things, and I thrive in collaborative environments. My leadership and teamwork abilities are demonstrated through my roles as Data Science and Artificial Intelligence Staff at OmahTI, where I contributed to major projects involving Natural Language Processing and Recommendation Systems, and as Human Capital Staff at Tanoto Scholars Association. I am committed to leveraging data expertise to gain insights and create meaningful impact for both organizations and society.`
 }
 ---
 <div class="flex bg-fifth m-10 rounded-4xl p-10 border-2 shadow-sm">
-    <div class="mr-10 w-1/5">
-        <img src="/joseph.jpg" alt="Joseph" class=" rounded-full shadow-sm-left" />
-    </div>
     
-    <div class="w-4/5">
-        <h2 class="text-4xl font-bold mb-2 font-itim">Joseph Greffen Komala</h2>
-        <p class="font-lusitana text-justify mb-3">I'm Joseph Greffen Komala — a Computer Science student who learns, grows, and explores with genuine joy.</p>
+    <div class="">
+        <h2 class="text-4xl font-bold mb-2 font-itim text-center">Joseph Greffen Komala</h2>
+        <p class="font-lusitana  mb-3 text-center">Computer Science student who learns, grows, and explores with genuine joy.</p>
         
         <p class="font-lusitana text-justify mb-3" set:html={content.first}></p>
         
-        <p class="font-lusitana text-justify mb-3" set:html={content.second}></p>
-        
-        <p class="font-lusitana text-justify mb-3" set:html={content.third}></p>
-        
-        <p class="font-lusitana text-justify" set:html={content.fourth}></p>
+
     </div>
 </div>
