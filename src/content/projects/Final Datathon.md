@@ -13,8 +13,9 @@ tags:
   - AI
 date: 2024-06-01
 featured: true
-github: https://github.com/
+github: https://github.com/ 
 demo:
+
 ---
 # Integration of Named Entity Recognition (NER) and Trend-Based Query Expansion to Enhance Multimodal Search Engine Relevance
 

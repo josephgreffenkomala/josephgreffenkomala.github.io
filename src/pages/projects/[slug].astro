@@ -4,29 +4,42 @@ import { getCollection, render } from 'astro:content';
 import Navbar from '../../components/Navbar.astro';
 import Foot from '../../components/Foot.astro';
 
+
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
-  return projects.map((project) => ({
+  return projects.map((project, index) => ({
     params: { slug: project.id },
-    props: { project },
+    props: { 
+      project,
+      index: index % 6 // Cycle through colors
+    },
   }));
 }
-
-const { project } = Astro.props;
+ const cardColors = [
+    '#5189D3', // Kuning
+    '#FED363', // Orange
+    '#83D6E8', // Biru
+    '#FF984D', // Cyan
+    '#01BBB6', // Pink
+    '#FE6B75', // Teal
+  ];
+const { project, index } = Astro.props;
 const { Content } = await render(project);
-
+console.log(index);
 ---
 
 
 <Layout>
 	
 	<Navbar/>
-    <div class="max-w-4xl mx-auto px-4 py-12 bg-fifth rounded-2xl shadow-sm border-2 font-lusitana border-black">
+    <div class={`max-w-4xl mx-auto px-4 py-12 rounded-2xl shadow-sm border-2 font-lusitana border-black`}
+    style={{ backgroundColor: cardColors[index] }}>
         <div class="project-content">
+            
             <Content />
         </div>
     </div>
-    {console.log(project)}
+    
 
     <Foot></Foot>
 	
