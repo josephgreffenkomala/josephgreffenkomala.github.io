@@ -58,7 +58,7 @@ const softSkills = [
         <div class="mb-6">
             <div class="flex items-center justify-center mb-4">
                 <div class="flex-1 h-px bg-gradient-to-r from-transparent via-first to-transparent"></div>
-                <p class="text-lg font-bold mx-4 font-itim text-center text-first bg-white/80 px-3 py-1 rounded-full shadow-md border border-first/20">
+                <p class={`bg-fifth-light text-first px-4 py-2 rounded-full font-itim font-bold text-sm shadow-md border-2 border-first hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-default`}>
                      Hard Skills
                 </p>
                 <div class="flex-1 h-px bg-gradient-to-r from-transparent via-first to-transparent"></div>
@@ -66,7 +66,7 @@ const softSkills = [
             <div class="text-center">
                 <div class="flex flex-wrap justify-center gap-2 max-w-5xl mx-auto">
                     {hardSkills.map((skill) => (
-                        <span class={`bg-white/95 text-${skill.color} px-4 py-2 rounded-full font-itim font-bold text-sm shadow-md border border-${skill.color}/30 hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-default`}>
+                        <span class={`bg-${skill.color} text-black px-4 py-2 rounded-full font-itim font-bold text-sm shadow-md border-2 border-black hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-default`}>
                             {skill.name}
                         </span>
                     ))}
@@ -78,7 +78,7 @@ const softSkills = [
         <div>
             <div class="flex items-center justify-center mb-4">
                 <div class="flex-1 h-px bg-gradient-to-r from-transparent via-fifth to-transparent"></div>
-                <p class="text-lg font-bold mx-4 font-itim text-center text-fifth bg-white/80 px-3 py-1 rounded-full shadow-md border border-fifth/20">
+                <p class={`bg-fifth-light text-sixth px-4 py-2 rounded-full font-itim font-bold text-sm shadow-md border-2 border-sixth hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-default`}>
                      Soft Skills
                 </p>
                 <div class="flex-1 h-px bg-gradient-to-r from-transparent via-fifth to-transparent"></div>
@@ -86,7 +86,7 @@ const softSkills = [
             <div class="text-center">
                 <div class="flex flex-wrap justify-center gap-2 max-w-5xl mx-auto">
                     {softSkills.map((skill) => (
-                        <span class={`bg-white/95 text-${skill.color} px-4 py-2 rounded-full font-itim font-bold text-sm shadow-md border border-${skill.color}/30 hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-default`}>
+                        <span class={`bg-${skill.color} text-black px-4 py-2 rounded-full font-itim font-bold text-sm shadow-md border-2 border-black hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-default`}>
                             {skill.name}
                         </span>
                     ))}
